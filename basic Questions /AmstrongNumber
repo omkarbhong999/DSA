@@ -1,0 +1,34 @@
+// Finding the Armstrong Number
+
+
+// NOTE
+// This program only calculate 100 to 9999 Armstrong numbers
+
+#include <iostream>
+using namespace std;
+int main() {
+
+int n,p,rem;
+
+    cout<<"Entre no to check Armstrong or note"<<endl;
+    cin>>n;
+     int temp=n ;
+    while(n>0){
+        rem = n%10;
+        if(temp > 1000){
+        p=(p)+(rem*rem*rem*rem);
+            
+        }
+        else{
+            p=(p)+(rem*rem*rem);
+        }
+        n=n/10;
+    }
+    if(temp == p){
+        cout<<temp<<" = this is Armstrong Number";
+    }
+    else{
+        cout<<temp<<" = This is Not Armstrong Number";
+    }
+    return 0;
+}
