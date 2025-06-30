@@ -1,0 +1,30 @@
+
+//Identifying Palindromes
+
+#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int main() {
+    
+    string str,rev;
+
+    cout<<"Entre a String"<<endl;
+    cin>>str;
+    
+    rev = str;
+    reverse(rev.begin(),rev.end());
+    
+    if(str == rev){
+        cout<<str;
+        cout<<" ="<<" is a palindrome.";
+    }
+    else{
+        cout<<str;
+        cout<<" ="<<" is Not a palindrome.";
+    }
+    
+     
+    return 0;
+}
