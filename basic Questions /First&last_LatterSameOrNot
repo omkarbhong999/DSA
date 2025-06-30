@@ -1,0 +1,31 @@
+
+
+// Checking First and Last letter of Word are same or not
+
+
+
+#include <iostream>
+using namespace std;
+
+
+int main() {
+    
+    string a,f,la;
+    int l;
+    
+    cout<<"Entre Word"<<endl;
+    cin>>a;
+    
+     l= a.length();
+     
+     f = a.at(0);
+     la = a.at(l-1);
+     
+     if (f==la){
+         cout<<"First and last Letter are same";
+     }
+     else{
+         cout<<"First and last Letter are Not same";
+     }
+     
+    return 0;
